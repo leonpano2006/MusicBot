@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '21'
-          distribution: 'azul'
+          distribution: 'zulu'
           cache: maven
       - name: Build and Test with Maven
         run: mvn --batch-mode --update-snapshots verify
